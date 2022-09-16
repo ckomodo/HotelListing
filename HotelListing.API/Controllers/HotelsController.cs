@@ -65,7 +65,7 @@ namespace HotelListing.API.Controllers
             }
 
             _mapper.Map(hotelDto, hotel);
-
+             
             try
             {
                 await _hotelsRepository.UpdateAsync(hotel);
