@@ -119,7 +119,7 @@ namespace HotelListing.API.Controllers
 
         // DELETE: api/Countries/5
         [HttpDelete("{id}")]
-        [Authorize]
+        [Authorize(Roles = "Administrator")]
 
         public async Task<IActionResult> DeleteCountry(int id)
         {
